@@ -37,7 +37,7 @@
 
                     console.log(lat, lng, label); 
 
-                    L.marker([lat, lng]).addTo(map).bindPopup(label);
+                    L.marker([lat, lng]).addTo(map).bindPopup(label, {autoPan: false});
                 });
             }
         });
